@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="chatApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular chat</title>
+    <link rel="stylesheet" href="app/css/chat.css">
+</head>
+<body>
+<div ng-controller="chatController">
+    <div class="chatBody">
+        <ul class="chatMessages">
+            <li ng-repeat="msg in messages">name:{{msg.author}}text:{{msg.text}}</li>
+        </ul>
+    </div>
+    <input type="text" ng-model="newMessage" placeholder="message">
+    <button ng-click="addNewMessage()">отправить</button>
+
+</div>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="app/index.js"></script>
+</body>
+</html>
