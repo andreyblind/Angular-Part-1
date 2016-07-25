@@ -1,5 +1,14 @@
-var app = angular.module("chatApp",[])
-.controller('chatController',['$scope', '$interval','$http', function($scope, $interval,$http) {
+var app = angular.module("chatApp",['ngRoute'])
+    .config(function($routeProvider){
+        $routeProvider
+            .when('/',{
+                templateUrl: '/static/app/views/index.html'
+            })
+            .when('/chat',{
+                templateUrl: '/static/app/views/chat.html'
+            })
+    })
+.controller('chatController',['$scope', '$interval','$http', function($scope, $interval, $http) {
 
     $scope.newMessage = null;
     $scope.messages = [];
