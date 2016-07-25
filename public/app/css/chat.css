@@ -7,3 +7,9 @@
 .chat-button{
     margin-top: 20px;
 }
+.input-form{
+    height: 33px;
+}
+.enter-name p{
+margin: 10px 30px !important;
+}

@@ -1,7 +1,9 @@
 <div ng-controller="chatController">
 <div ng-hide="displayChat">
-    <p>enter your name</p>
-    <input type="text" placeholder="name" ng-model="name">
+    <div class="enter-name">
+        <p>enter your name:</p>
+    </div>
+    <input type="text" placeholder="name" class="input-form" ng-model="name">
     <button type="button" class="btn btn-primary" ng-click="showChat()">ok</button>
 </div>
 <div ng-show="displayChat">
@@ -10,7 +12,10 @@
                 <li ng-repeat="msg in messages">{{msg.name}}:{{msg.message}}</li>
             </ul>
     </div>
-        <input type="text" ng-model="newMessage" placeholder="message">
-        <button type="button" class="btn btn-primary" ng-click="addNewMessage()">отправить</button>
+    <div>
+        <input type="text" placeholder="message" class="input-form" ng-model="newMessage">
+        <button type="button" class="btn btn-primary" ng-click="addNewMessage()">send</button>
     </div>
+
+</div>
 </div>
