@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Angular chat</title>
     <link rel="stylesheet" href="static/app/css/chat.css">
+    <link rel="stylesheet" href="static/app/css/bootstrap.min.css">
 </head>
 <body>
+<ul class="nav nav-pills">
+  <li><a href="/#/">Main page</a></li>
+  <li><a href="/#/chat">Chat</a></li>
+</ul>
 <div ng-view></div>
 <div ng-controller="chatController">
 
