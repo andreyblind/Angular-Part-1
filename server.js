@@ -14,7 +14,6 @@ app.get('/messages', function (req, res) {
 app.post('/addmessage', function(req, res){
 	var message = {name: req.param('name'), message: req.param('message')};
 	messages.push(message);
-	console.log(req.params);
 });
 
 app.get('/', function(req, res){

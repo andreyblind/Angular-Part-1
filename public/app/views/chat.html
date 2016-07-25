@@ -2,7 +2,7 @@
 <div ng-hide="displayChat">
     <p>enter your name</p>
     <input type="text" placeholder="name" ng-model="name">
-    <button ng-click="showChat()">ok</button>
+    <button type="button" class="btn btn-primary" ng-click="showChat()">ok</button>
 </div>
 <div ng-show="displayChat">
     <div class="chatBody">
@@ -11,6 +11,6 @@
             </ul>
     </div>
         <input type="text" ng-model="newMessage" placeholder="message">
-        <button ng-click="addNewMessage()">отправить</button>
+        <button type="button" class="btn btn-primary" ng-click="addNewMessage()">отправить</button>
     </div>
 </div>
