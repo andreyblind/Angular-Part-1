@@ -9,7 +9,7 @@
 <div ng-controller="chatController">
     <div class="chatBody">
         <ul class="chatMessages">
-            <li ng-repeat="msg in messages">name:{{msg.author}}text:{{msg.text}}</li>
+            <li ng-repeat="msg in messages">name:{{msg.name}}text:{{msg.message}}</li>
         </ul>
     </div>
     <input type="text" ng-model="newMessage" placeholder="message">
